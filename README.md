@@ -83,6 +83,10 @@ Model cards with additional details can be found in [model_card.md](model_card.m
 
   python -m openlrm.launch infer.lrm --infer $INFER_CONFIG model_name=$MODEL_NAME image_input=$IMAGE_INPUT export_video=$EXPORT_VIDEO export_mesh=$EXPORT_MESH
   ```
+  ```
+  # Colab example
+  ! python -m openlrm.launch infer.lrm --infer "./configs/infer-b.yaml" model_name="zxhezexin/openlrm-mix-base-1.1" image_input="./assets/sample_input/owl.png" export_video=true export_mesh=true
+  ```
 
 ### Tips
 - The recommended PyTorch version is `>=2.1`. Code is developed and tested under PyTorch `2.1.2`.
